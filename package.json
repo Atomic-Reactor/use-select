@@ -1,0 +1,54 @@
+{
+  "name": "@atomic-reactor/use-select",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atomic-Reactor/reactium-sdk-core.git"
+  },
+  "dependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
+  },
+  "devDependencies": {
+    "@atomic-reactor/reactium-sdk-core": "^1.1.0",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "action-sequence": "^1.1.1",
+    "apidoc": "^0.24.0",
+    "babel-jest": "^26.2.2",
+    "chai": "^4.2.0",
+    "classnames": "^2.2.6",
+    "jest": "^26.2.2",
+    "jest-cli": "^26.2.2",
+    "object-path": "^0.11.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.4",
+    "shallow-equals": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@atomic-reactor/reactium-sdk-core": "*",
+    "react-redux": "*",
+    "object-path": "*",
+    "react": "*",
+    "redux": "*",
+    "react-dom": "*",
+    "shallow-equals": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "apidoc": "apidoc -i src -o docs",
+    "test": "jest",
+    "pretest": "npm run build",
+    "prepublish": "rm -rf lib && npm run build"
+  },
+  "files": [
+    "lib"
+  ]
+}
