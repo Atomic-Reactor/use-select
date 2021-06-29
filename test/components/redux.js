@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import CommonSDK, {
+import {
     useReduxState,
+} from '../../lib';
+import {
     useRegisterHandle,
     useHandle,
-} from '../../lib';
+} from '@atomic-reactor/reactium-sdk-core/lib/named-exports/handle';
 import op from 'object-path';
 
 const domainReducer = (state = {}, action) => {

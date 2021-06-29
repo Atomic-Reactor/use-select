@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect, useRef } from 'react';
 import op from 'object-path';
-import { useSyncState } from '@atomic-reactor/reactium-sdk-core';
+import { useSyncState } from '@atomic-reactor/reactium-sdk-core/lib/named-exports/useSyncState';
 import { connect, ReactReduxContext } from 'react-redux';
 
 const shallowEquals = require('shallow-equals');
@@ -18,7 +18,7 @@ as well as a `getState` function property.
  * @apiGroup Reactium.Utilities
  * @apiExample MyComponent/index.js
 import MyComponent from './MyComponent';
-import { ec } from 'reactium-core/sdk';
+import { ec } from '@atomic-reactor/use-select';
 
 export ec(MyComponent);
  * @apiExample MyComponent/MyComponent.js
@@ -77,7 +77,7 @@ store when used on a component declared within the Store Provider.
  * @apiGroup ReactHook
  * @apiExample MyComponent.js
 import React, { useEffect } from 'react';
-import { useStore } from 'reactium-core/sdk';
+import { useStore } from '@atomic-reactor/use-select';
 
 export default () => {
     const { dispatch, getState, subscribe } = useStore();
@@ -133,7 +133,7 @@ you have specifically targeted.
  * @apiGroup ReactHook
  * @apiExample Simple.js
 import React from 'react';
-import { useSelect } from 'reactium-core/sdk';
+import { useSelect } from '@atomic-reactor/use-select';
 
 // given a Redux state of { "Simple": {"foo": { "bar": "baz" }}}
 export default () => {
@@ -147,7 +147,7 @@ export default () => {
 };
 * @apiExample Advanced.js
 import React from 'react';
-import { useSelect } from 'reactium-core/sdk';
+import { useSelect } from '@atomic-reactor/use-select';
 
 // given a Redux state of {
 //    "Advanced": {

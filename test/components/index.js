@@ -1,11 +1,4 @@
-import CommonSDK from '../../lib';
+// import CommonSDK from '@atomic-reactor/reactium-sdk-core';
 
-export * from './component';
-export * from './event-handle';
-export * from './sync-state';
-export * from './handle';
 export * from './redux';
-export * from './zone';
-export * from './derived';
-export * from './async-effect';
-export const SDK = CommonSDK;
+// export const SDK = CommonSDK;
