@@ -1,0 +1,15 @@
+define({
+  "name": "@atomic-reactor/use-select",
+  "version": "1.0.31",
+  "description": "Reactium useSelect hook.",
+  "title": "Reactium useSelect hook.",
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2021-06-29T23:26:28.504Z",
+    "url": "http://apidocjs.com",
+    "version": "0.24.0"
+  }
+});
