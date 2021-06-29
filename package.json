@@ -1,10 +1,10 @@
 {
   "name": "@atomic-reactor/use-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Atomic-Reactor/reactium-sdk-core.git"
+    "url": "https://github.com/Atomic-Reactor/use-select.git"
   },
   "dependencies": {
     "enzyme": "^3.11.0",
