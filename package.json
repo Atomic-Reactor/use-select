@@ -11,7 +11,7 @@
     "enzyme-adapter-react-16": "^1.15.2"
   },
   "devDependencies": {
-    "@atomic-reactor/reactium-sdk-core": "^1.1.0",
+    "@atomic-reactor/reactium-sdk-core": "^1.1.1",
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.0",
     "@babel/plugin-proposal-class-properties": "^7.10.4",

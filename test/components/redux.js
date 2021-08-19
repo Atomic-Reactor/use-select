@@ -48,6 +48,7 @@ export const StateChanger = () => {
 };
 export const StateUser = () => {
     const [domain, updateDomain] = useReduxState('TestDomain');
+
     useRegisterHandle(
         'TestDomain',
         () => {
@@ -58,5 +59,5 @@ export const StateUser = () => {
         [],
     );
 
-    return op.get(domain, 'value');
+    return op.get(domain, 'value', null);
 };
